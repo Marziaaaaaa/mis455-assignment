@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Agency</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="/tours.html">Tours</a>
+    <a href="/contact.html">Contact</a>
+    <a href="About us.html">About us</a>
+    <a href="Pricing.html">Pricing</a>
+  </nav>
+</header>
+
+<section id="tour-categories">
+  <h2>Tour Categories</h2>
+  <ul>
+    <li><a href="/tours/hiking">Hiking</a></li>
+    <li><a href="/tours/kayaking">Kayaking</a></li>
+    <li><a href="/tours/safari">Safari</a></li>
+    <li><a href="/tours/mountain-biking">Mountain Biking</a></li>
+  </ul>
+</section>
+
+<section id="list-of-tours">
+  <h2>List of Tours</h2>
+  <div class="grid">
+    
+      <article class="tour">
+        <img src="tour-1.jpg" alt="Tour 1: Hiking in the Himalayas">
+        <h3> Hiking in the Himalayas </h3>
+        <p> The Himalayas is home to the highest mountains in the world, and most people will be familiar with Everest and the frequent attempts made to climb to the summit of this huge mountain. However, if you enjoy amazing mountain scenery and hiking but don't have advanced mountaineering skills, then there are several routes around the region that give you a spectacular Himalayan experience without the overwhelming challenge of ascending these mountains. There is something very special about exploring the high mountains of the Himalaya     </p>
+        <a href="/tours/<?php echo $tour['category']; ?>/<?php echo $tour['id']; ?>" class="learn-more-btn">Learn More</a>
+      </article>
+    
+  </div>
+  <br>
+  <div class="grid">
+    
+      <article class="tour">
+        <img src="tour-2.jpg" alt="Tour 2: Whitewater Rafting in the Amazon">
+        <h3> Whitewater Raftingin the Amazon</h3>
+        <p>This three-day excursion combines jungle hikes with a world class Amazon river rafting adventure that runs through two of Ecuador’s very best one-day river runs. Located on the eastern flanks of the Andes Mountains, this region is perfect for white water rafting, as the landscape slowly meanders down from the high mountains to the Amazon River Basin. The Jatunyacu is a classic descent through breathtaking jungle scenery with Kichwa Indian families settled along its shores. This descent is followed by a combined stretch of the Jondachi and Hollin rivers which offer exciting rapids      </p>
+        <a href="/tours/<?php echo $tour['category']; ?>/<?php echo $tour['id']; ?>" class="learn-more-btn">Learn More</a>
+      </article>
+    
+  </div>
+  <br>
+  <div class="grid">
+    
+      <article class="tour">
+        <img src="tour-3.jpg" alt="Tour 3: Camping in the African Savannah">
+        <h3> Camping in the African Savannah </h3>
+        <p> Indulge in the ultimate comfort while experiencing Africa’s wild beauty with our Luxury Africa Savannah Safaris. Combining opulent lodges with exclusive game drives, this safari redefines adventure. Enjoy private wildlife encounters, gourmet meals, and personalized service tailored to your desires. Whether it’s the Serengeti or the Okavango Delta, expect a journey where luxury meets the call of the wild</p>
+        <a href="/tours/<?php echo $tour['category']; ?>/<?php echo $tour['id']; ?>" class="learn-more-btn">Learn More</a>
+      </article>
+    
+  </div>
+</section>
+
+<footer>
+  <p>Contact Information</p>
+  <p>Social Media Links</p>
+  <p>Copyright Information</p>
+</footer>
+
+</body>
+</html>
